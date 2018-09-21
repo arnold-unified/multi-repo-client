@@ -1,5 +1,7 @@
-function printMessage () {
-	console.log('This is from client module.')
+function printMessage (message) {
+	if (!message) message = 'This is from client module.'
+		
+	console.log(message)
 }
 
 printMessage();
